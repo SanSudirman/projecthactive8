@@ -1,7 +1,7 @@
 # Jelajah — Travel Assistant Chatbot (Gemini AI)
 
 Chatbot travel assistant berbasis web yang mensimulasikan percakapan dengan pengguna
-menggunakan **Google Gemini 2.5 Flash**, dibangun sesuai alur materi Sesi 3 Hacktiv8
+menggunakan **Google Gemini 3.5 Flash-lite**, dibangun sesuai alur materi Sesi 3 Hacktiv8
 ("Pembuatan Chatbot berbasis Gemini AI Model"): frontend **Vanilla JS** + backend
 **Node.js/Express**, terhubung lewat endpoint `POST /api/chat`.
 
