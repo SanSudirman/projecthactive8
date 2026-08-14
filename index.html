@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jelajah — Travel Assistant AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky"></div>
+
+  <main class="pass" role="main">
+    <!-- Boarding-pass style header -->
+    <header class="pass__header">
+      <div class="pass__brand">
+        <span class="pass__plane" aria-hidden="true">&#9992;</span>
+        <div>
+          <p class="pass__title">JELAJAH</p>
+          <p class="pass__subtitle">Travel Assistant AI</p>
+        </div>
+      </div>
+      <div class="pass__status">
+        <span class="pass__dot" aria-hidden="true"></span>
+        Boarding&nbsp;Live
+      </div>
+    </header>
+
+    <div class="pass__route">
+      <div class="pass__stop">
+        <span class="pass__label">Dari</span>
+        <span class="pass__place">Rasa Penasaranmu</span>
+      </div>
+      <div class="pass__path" aria-hidden="true">
+        <span class="pass__dashline"></span>
+        <span class="pass__plane-mid">&#9992;</span>
+      </div>
+      <div class="pass__stop pass__stop--right">
+        <span class="pass__label">Ke</span>
+        <span class="pass__place">Mana Saja</span>
+      </div>
+    </div>
+
+    <div class="pass__perforation" aria-hidden="true"></div>
+
+    <!-- Chat area -->
+    <section class="pass__body">
+      <div id="chat-box" class="chat-box" aria-live="polite">
+        <!-- pesan awal akan disisipkan oleh script.js -->
+      </div>
+
+      <form id="chat-form" class="composer" autocomplete="off">
+        <input
+          id="user-input"
+          type="text"
+          placeholder="Tanya soal rencana liburanmu…"
+          aria-label="Tulis pertanyaan tentang perjalananmu"
+          required
+        />
+        <button type="submit" class="composer__send">
+          Kirim <span aria-hidden="true">&#9992;</span>
+        </button>
+      </form>
+
+      <p class="composer__hint">
+        Contoh: "Rencanakan itinerary 3 hari di Yogyakarta dengan budget hemat"
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
