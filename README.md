@@ -16,7 +16,6 @@ menggunakan **Google Gemini 3.5 Flash-lite**, dibangun sesuai alur materi Sesi 3
 ## Struktur File
 ```
 gemini-travel-chatbot/
-├── .env.example      # Contoh environment variable (salin jadi .env)
 ├── .gitignore
 ├── index.js           # Backend Express + Gemini AI
 ├── package.json
@@ -34,7 +33,7 @@ gemini-travel-chatbot/
    ```
 
 2. **Siapkan API key Gemini**
-   - Salin `.env.example` menjadi `.env`
+   - buat file dengan nama ".env"`
    - Isi `GEMINI_API_KEY` dengan API key kamu dari https://aistudio.google.com/app/apikey
 
 3. **Jalankan server**
