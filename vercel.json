@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "gemini-travel-chatbot/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "gemini-travel-chatbot/public/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "gemini-travel-chatbot/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "gemini-travel-chatbot/public/$1"
+    }
+  ],
+  "env": {
+    "GEMINI_API_KEY": "@gemini_api_key",
+    "PORT": "3000"
+  }
+}
