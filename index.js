@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-const GEMINI_MODEL = "gemini-2.5-flash";
+const GEMINI_MODEL = "gemini-3.5-flash-lite";
 
 // System Instruction: menetapkan persona, nada bicara, dan batasan chatbot
 const SYSTEM_INSTRUCTION = `
